@@ -1,0 +1,87 @@
+/*-- == MOON == --*/
+
+
+/*#moonBody {
+  background-image: url(/././img/moons/celestial_chart_moon.jpg);
+  background-size:contain;
+  background-repeat:no-repeat;
+  background-position:center;
+  height: 100vh;
+  background-attachment: fixed;
+  color: black;
+  text-shadow: 0 0 10px bisque;*/
+}
+
+html {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: black;
+}
+
+.textDiv {
+  text-align: center;
+  color: goldenrod;
+  font-family: "IM Fell English", serif;
+  text-shadow: 0 0 8px red;
+}
+
+/*-----IMAGES-------*/
+.imageDiv {
+  position: relative;
+  width: 100%;
+  
+}
+
+#celestial {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  transition: .5s cubic-bezier(0.7, 0.2, 0.5, 1.0);
+  opacity: 0;
+  background: rgba(0,0,0,0.8);
+}
+
+.imageDiv:hover .overlay{
+  opacity: 1;
+}
+
+#spinMoon {
+  animation: rotation 10s infinite linear;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
+
+@media (min-width: 1000px) {
+  .imageDiv {
+    width: 80%;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+
+@media (min-width: 1400px) {
+  .imageDiv {
+    width: 55%;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+

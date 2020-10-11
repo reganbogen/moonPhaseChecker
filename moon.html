@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- META TAGS -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, shrink-to-fit=no">
+
+    <!-- BOOTSTRAP 
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"> -->
+
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="styles.css">
+
+    <!-- FONTS -->
+    <link href="https://fonts.googleapis.com/css2?family=IM+Fell+English:ital@0;1&display=swap" rel="stylesheet">
+    
+    <!--JQUERY SCRIPTS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+      crossorigin="anonymous">
+    </script>
+    
+    <!--MOON SCRIPTS -->
+    <script src="js/moon.js"></script>
+
+    <title>Today | Phases</title>
+
+  </head>
+  <body id="moonBody">
+  
+    <div class="textDiv">
+      <h1 class="text-center" id="moonDiv">Today's Date</h1>
+      <h2 class="text-center" id="phaseDiv" style="text-transform: uppercase">Today's Moon Phase</h2>
+    </div>
+    
+    <div class="imageDiv">
+      <img src="moons/celestial_chart_moon.jpg" id="celestial" class="images">
+      <img src="moons/moons.png"  id="spinMoon" class="images">
+      <img src="moons/moons.png" onclick="matchMoon()" id="moon" class="images overlay">
+    </div>
+    <div id="particles-js" class="container"></div>
+    <!--PARTICLES scripts-->
+    <script src="js/particles.min.js"></script>
+    <script src="js/app.js"></script>
+    
+  </body>
+</html>
